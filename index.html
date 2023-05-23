@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    
+        <header class="logoAlura">
+            <img src="imagens/Logo.png" alt="logo de Alura">
+        </header>
+
+        <main>
+            <section>
+
+                <textarea class="text-area" placeholder= "Digite seu texto..." autofocus spellcheck="false"></textarea>
+
+                <div class="informacao">
+                     <p>Apenas letras minúsculas e sem acento</p>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="btnEncriptador()" class="btnCriptografar">Criptografar</button>
+                    <button onclick="btnDesencriptar()" class="btnDesencriptografar">Desencriptografar</button>
+                </div>
+
+            </section>
+
+            <section>
+                <textarea class="mensagem" id="mensagem"></textarea>
+
+                
+                <div class="botaoCopiar">
+                    <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+
+                <div class="menino">
+                    <img class="imagem-menino" src="imagens/1.PNG.png" alt="menino com a lupa"> 
+                    <h1>Nenhuma Mensagem Encontrada</h1>
+                    <h2 id="meninoTexto">Digite a mensagem que você deseja criptografar ou descriptografar.</h2>
+                </div>
+    
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <p>Alura Challenge - Oracle Next Education 
+                Desenvolvido por: <a href="https://github.com/marcossilvasantos" target="_blank"> <strong>Marcos Silva Santos</strong></a>
+            </p>
+        </footer>
+    
+
+    
+</body>
+</html>
